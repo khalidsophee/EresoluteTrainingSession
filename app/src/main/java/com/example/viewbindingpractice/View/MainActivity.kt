@@ -1,4 +1,4 @@
-package com.example.viewbindingpractice
+package com.example.viewbindingpractice.View
 
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
@@ -7,8 +7,8 @@ import android.view.LayoutInflater
 import android.view.View
 import android.widget.Toast
 import androidx.appcompat.app.AlertDialog
+import com.example.viewbindingpractice.R
 import com.example.viewbindingpractice.databinding.ActivityMainBinding
-import kotlinx.android.synthetic.main.submit_dialog.*
 
 
 class MainActivity : AppCompatActivity() {
@@ -67,7 +67,8 @@ class MainActivity : AppCompatActivity() {
                        }
                        else if(flag==1)
                        {
-                           val intent =Intent(this,OtpActivity::class.java)
+                           val intent =Intent(this,
+                               OtpActivity::class.java)
                            startActivity(intent)
                           // Toast.makeText(this,"Add Details",Toast.LENGTH_LONG).show()
                        }

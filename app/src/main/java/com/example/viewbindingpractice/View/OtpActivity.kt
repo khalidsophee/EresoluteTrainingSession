@@ -1,11 +1,11 @@
-package com.example.viewbindingpractice
+package com.example.viewbindingpractice.View
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import androidx.appcompat.app.AlertDialog
-import com.example.viewbindingpractice.databinding.ActivityMainBinding
+import com.example.viewbindingpractice.R
 import com.example.viewbindingpractice.databinding.ActivityOtpBinding
 
 class OtpActivity : AppCompatActivity() {
