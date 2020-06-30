@@ -21,15 +21,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="8b03c82b-2873-4aec-addb-c06aba60d2e4" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.gradle/6.1.1/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.1.1/fileHashes/fileHashes.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/caches/build_file_checksums.ser" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/caches/build_file_checksums.ser" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules/app/app.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules/app/app.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/viewbindingpractice/MainActivity.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/viewbindingpractice/View/MainActivity.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/viewbindingpractice/OtpActivity.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/viewbindingpractice/View/OtpActivity.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_otp.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_otp.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/successdialog.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/successdialog.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -70,7 +63,7 @@
         <option name="title" value="All" />
       </GitPushTagMode>
     </option>
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/app" />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
     <option name="UPDATE_TYPE" value="MERGE" />
   </component>
   <component name="ProjectId" id="1doc1wB7SNRtGnnbhRBeDM61s2H" />
@@ -182,6 +175,13 @@
     </task>
     <servers />
   </component>
+  <component name="VcsManagerConfiguration">
+    <ignored-roots>
+      <path value="$PROJECT_DIR$/app" />
+    </ignored-roots>
+    <MESSAGE value="Alterations added" />
+    <option name="LAST_COMMIT_MESSAGE" value="Alterations added" />
+  </component>
   <component name="WindowStateProjectService">
     <state x="275" y="22" key="#Auto_Import" timestamp="1593426685124">
       <screen x="0" y="0" width="1366" height="728" />
@@ -215,14 +215,14 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="542" y="194" key="AndroidCreateXmlResourceDialog/0.0.1366.728@0.0.1366.728" timestamp="1593243174455" />
-    <state x="255" y="0" key="CommitChangelistDialog2" timestamp="1593512068532">
+    <state x="255" y="0" key="CommitChangelistDialog2" timestamp="1593512101749">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="255" y="0" key="CommitChangelistDialog2/0.0.1366.728@0.0.1366.728" timestamp="1593512068532" />
-    <state x="463" y="119" key="FileChooserDialogImpl" timestamp="1593460716536">
+    <state x="255" y="0" key="CommitChangelistDialog2/0.0.1366.728@0.0.1366.728" timestamp="1593512101749" />
+    <state x="463" y="119" key="FileChooserDialogImpl" timestamp="1593513212634">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="463" y="119" key="FileChooserDialogImpl/0.0.1366.728@0.0.1366.728" timestamp="1593460716536" />
+    <state x="463" y="119" key="FileChooserDialogImpl/0.0.1366.728@0.0.1366.728" timestamp="1593513212634" />
     <state x="532" y="257" key="Github.ShareDialog" timestamp="1593461560093">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
@@ -247,14 +247,14 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state width="1323" height="527" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1593461152086" />
-    <state x="0" y="13" key="SettingsEditor" timestamp="1593493102096">
+    <state x="0" y="13" key="SettingsEditor" timestamp="1593513223833">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="0" y="13" key="SettingsEditor/0.0.1366.728@0.0.1366.728" timestamp="1593493102096" />
-    <state x="275" y="97" key="Vcs.Push.Dialog.v2" timestamp="1593511847792">
+    <state x="0" y="13" key="SettingsEditor/0.0.1366.728@0.0.1366.728" timestamp="1593513223833" />
+    <state x="275" y="97" key="Vcs.Push.Dialog.v2" timestamp="1593512314623">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="275" y="97" key="Vcs.Push.Dialog.v2/0.0.1366.728@0.0.1366.728" timestamp="1593511847792" />
+    <state x="275" y="97" key="Vcs.Push.Dialog.v2/0.0.1366.728@0.0.1366.728" timestamp="1593512314623" />
     <state x="499" y="142" key="chooseDestDirectoryDialog" timestamp="1593405333319">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
