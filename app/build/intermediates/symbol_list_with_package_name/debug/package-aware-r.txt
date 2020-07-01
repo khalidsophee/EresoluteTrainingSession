@@ -1633,7 +1633,11 @@ id exitUntilCollapsed
 id expand_activities_button
 id expanded_menu
 id fade
+id fewa_addfrom_beneficiary
 id fewa_details
+id fewa_pick_Account
+id fewa_pick_heading
+id fewa_pick_mawakif
 id fill
 id fill_horizontal
 id fill_vertical
@@ -1900,6 +1904,7 @@ layout abc_search_dropdown_item_icons_2line
 layout abc_search_view
 layout abc_select_dialog_material
 layout abc_tooltip
+layout activity_fewa_pick
 layout activity_main
 layout activity_otp
 layout custom_dialog

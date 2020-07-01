@@ -18,8 +18,9 @@
         android:supportsRtl="true"
         android:testOnly="true"
         android:theme="@style/AppTheme" >
-        <activity android:name="com.example.viewbindingpractice.OtpActivity" />
-        <activity android:name="com.example.viewbindingpractice.MainActivity" >
+        <activity android:name="com.example.viewbindingpractice.View.FewaPickActivity" />
+        <activity android:name="com.example.viewbindingpractice.View.OtpActivity" />
+        <activity android:name="com.example.viewbindingpractice.View.MainActivity" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

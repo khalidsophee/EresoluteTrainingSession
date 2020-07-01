@@ -1,5 +1,6 @@
 package com.example.viewbindingpractice.View
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.LayoutInflater
@@ -30,4 +31,12 @@ class OtpActivity : AppCompatActivity() {
         //dialog.setCancelable(false)
         dialog.show()
     }
+    fun openPickFewa(view: View) {
+        val intent = Intent(this,FewaPickActivity::class.java)
+        startActivity(intent)
+    }
+
+
+
+
 }

@@ -9,17 +9,20 @@ import android.widget.Toast
 import androidx.appcompat.app.AlertDialog
 import com.example.viewbindingpractice.R
 import com.example.viewbindingpractice.databinding.ActivityMainBinding
+import com.google.android.material.bottomsheet.BottomSheetBehavior
+import com.google.android.material.bottomsheet.BottomSheetDialog
+import kotlinx.android.synthetic.main.submit_dialog.*
 
 
 class MainActivity : AppCompatActivity() {
     private lateinit var binding: ActivityMainBinding
-      var flag:Int=0
+    var flag: Int = 0
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         binding = ActivityMainBinding.inflate(layoutInflater)
         val view = binding.root
         setContentView(view)
-        binding.circleArrowIcon.isEnabled=false
+        binding.circleArrowIcon.isEnabled = false
     }
 
 
@@ -30,6 +33,7 @@ class MainActivity : AppCompatActivity() {
 
 
     fun Fewa(view: View) {
+
         binding.Account.visibility = View.VISIBLE
         binding.textvw.visibility = View.VISIBLE
 
@@ -47,44 +51,37 @@ class MainActivity : AppCompatActivity() {
 
     fun Addname(view: View) {
         binding.Name.setText("Khalid Aziz")
-        binding.circleArrowIcon.isEnabled=true
+        binding.circleArrowIcon.isEnabled = true
     }
 
-    fun submit(view: View)
-    {
-                   if(binding.circleArrowIcon.isEnabled)
-                   {
-                       if(flag==0)
-                       {
-                       val dialog = AlertDialog.Builder(this)
-                       val mDialogView = LayoutInflater.from(this).inflate(R.layout.submit_dialog, null)
-                       dialog.setView(mDialogView)
-                       //dialog.setCancelable(false)
-                       dialog.show()
-                       //done_tick.setOnClickListener {
-                       //  val alertDialog:AlertDialog =dialog.create()
-                       //alertDialog.dismiss()
-                       }
-                       else if(flag==1)
-                       {
-                           val intent =Intent(this,
-                               OtpActivity::class.java)
-                           startActivity(intent)
-                          // Toast.makeText(this,"Add Details",Toast.LENGTH_LONG).show()
-                       }
-                   }
-        else
-                   {
-                       Toast.makeText(this,"Add Details",Toast.LENGTH_LONG).show()
-                   }
+    fun submit(view: View) {
+        if (binding.circleArrowIcon.isEnabled) {
+            if (flag == 0) {
+                val dialog = AlertDialog.Builder(this)
+                val mDialogView = LayoutInflater.from(this).inflate(R.layout.submit_dialog, null)
+                dialog.setView(mDialogView)
+                //dialog.setCancelable(false)
+                dialog.show()
+                //done_tick.setOnClickListener {
+                //  val alertDialog:AlertDialog =dialog.create()
+                //alertDialog.dismiss()
+            } else if (flag == 1) {
+                val intent = Intent(
+                    this,
+                    OtpActivity::class.java
+                )
+                startActivity(intent)
+                // Toast.makeText(this,"Add Details",Toast.LENGTH_LONG).show()
+            }
+        } else {
+            Toast.makeText(this, "Add Details", Toast.LENGTH_LONG).show()
+        }
 
     }
-      fun edit(view: View)
-      {
-          binding.payment.setText("500")
-          flag=1
-      }
+
+    fun edit(view: View) {
+        binding.payment.setText("500")
+        flag = 1
+    }
 
 }
-
-
