@@ -1,5 +1,9 @@
 [
     {
+        "merged": "C:\\Users\\Haamid\\AndroidStudioProjects\\ViewBindingPractice\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\bottom_sheet.xml",
+        "source": "C:\\Users\\Haamid\\AndroidStudioProjects\\ViewBindingPractice\\app\\src\\main\\res\\layout\\bottom_sheet.xml"
+    },
+    {
         "merged": "C:\\Users\\Haamid\\AndroidStudioProjects\\ViewBindingPractice\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\activity_otp.xml",
         "source": "C:\\Users\\Haamid\\AndroidStudioProjects\\ViewBindingPractice\\app\\src\\main\\res\\layout\\activity_otp.xml"
     },
@@ -14,6 +18,10 @@
     {
         "merged": "C:\\Users\\Haamid\\AndroidStudioProjects\\ViewBindingPractice\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\submit_dialog.xml",
         "source": "C:\\Users\\Haamid\\AndroidStudioProjects\\ViewBindingPractice\\app\\src\\main\\res\\layout\\submit_dialog.xml"
+    },
+    {
+        "merged": "C:\\Users\\Haamid\\AndroidStudioProjects\\ViewBindingPractice\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\bottomsheet_view.xml",
+        "source": "C:\\Users\\Haamid\\AndroidStudioProjects\\ViewBindingPractice\\app\\src\\main\\res\\layout\\bottomsheet_view.xml"
     },
     {
         "merged": "C:\\Users\\Haamid\\AndroidStudioProjects\\ViewBindingPractice\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\successdialog.xml",

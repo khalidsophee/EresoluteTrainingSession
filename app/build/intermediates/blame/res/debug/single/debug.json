@@ -40,12 +40,12 @@
         "source": "C:\\Users\\Haamid\\AndroidStudioProjects\\ViewBindingPractice\\app\\src\\main\\res\\mipmap-xxhdpi\\ic_launcher.png"
     },
     {
-        "merged": "C:\\Users\\Haamid\\AndroidStudioProjects\\ViewBindingPractice\\app\\build\\intermediates\\res\\merged\\debug\\drawable-anydpi-v24_ic_circled_arrow_icon.xml.flat",
-        "source": "C:\\Users\\Haamid\\AndroidStudioProjects\\ViewBindingPractice\\app\\build\\generated\\res\\pngs\\debug\\drawable-anydpi-v24\\ic_circled_arrow_icon.xml"
-    },
-    {
         "merged": "C:\\Users\\Haamid\\AndroidStudioProjects\\ViewBindingPractice\\app\\build\\intermediates\\res\\merged\\debug\\font_raleway_extrabold.ttf.flat",
         "source": "C:\\Users\\Haamid\\AndroidStudioProjects\\ViewBindingPractice\\app\\src\\main\\res\\font\\raleway_extrabold.ttf"
+    },
+    {
+        "merged": "C:\\Users\\Haamid\\AndroidStudioProjects\\ViewBindingPractice\\app\\build\\intermediates\\res\\merged\\debug\\drawable-anydpi-v24_ic_circled_arrow_icon.xml.flat",
+        "source": "C:\\Users\\Haamid\\AndroidStudioProjects\\ViewBindingPractice\\app\\build\\generated\\res\\pngs\\debug\\drawable-anydpi-v24\\ic_circled_arrow_icon.xml"
     },
     {
         "merged": "C:\\Users\\Haamid\\AndroidStudioProjects\\ViewBindingPractice\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi_ic_background_bottom_reg.png.flat",
@@ -84,12 +84,12 @@
         "source": "C:\\Users\\Haamid\\AndroidStudioProjects\\ViewBindingPractice\\app\\src\\main\\res\\layout\\activity_main.xml"
     },
     {
-        "merged": "C:\\Users\\Haamid\\AndroidStudioProjects\\ViewBindingPractice\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi_ic_thums_up.png.flat",
-        "source": "C:\\Users\\Haamid\\AndroidStudioProjects\\ViewBindingPractice\\app\\build\\generated\\res\\pngs\\debug\\drawable-xxhdpi\\ic_thums_up.png"
-    },
-    {
         "merged": "C:\\Users\\Haamid\\AndroidStudioProjects\\ViewBindingPractice\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi_ic_edit.png.flat",
         "source": "C:\\Users\\Haamid\\AndroidStudioProjects\\ViewBindingPractice\\app\\build\\generated\\res\\pngs\\debug\\drawable-hdpi\\ic_edit.png"
+    },
+    {
+        "merged": "C:\\Users\\Haamid\\AndroidStudioProjects\\ViewBindingPractice\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi_ic_thums_up.png.flat",
+        "source": "C:\\Users\\Haamid\\AndroidStudioProjects\\ViewBindingPractice\\app\\build\\generated\\res\\pngs\\debug\\drawable-xxhdpi\\ic_thums_up.png"
     },
     {
         "merged": "C:\\Users\\Haamid\\AndroidStudioProjects\\ViewBindingPractice\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi_ic_otp_25_px.png.flat",
@@ -120,16 +120,16 @@
         "source": "C:\\Users\\Haamid\\AndroidStudioProjects\\ViewBindingPractice\\app\\src\\main\\res\\mipmap-xxxhdpi\\ic_launcher.png"
     },
     {
-        "merged": "C:\\Users\\Haamid\\AndroidStudioProjects\\ViewBindingPractice\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-hdpi_ic_launcher.png.flat",
-        "source": "C:\\Users\\Haamid\\AndroidStudioProjects\\ViewBindingPractice\\app\\src\\main\\res\\mipmap-hdpi\\ic_launcher.png"
+        "merged": "C:\\Users\\Haamid\\AndroidStudioProjects\\ViewBindingPractice\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi_ic_launcher_background.png.flat",
+        "source": "C:\\Users\\Haamid\\AndroidStudioProjects\\ViewBindingPractice\\app\\build\\generated\\res\\pngs\\debug\\drawable-xxxhdpi\\ic_launcher_background.png"
     },
     {
         "merged": "C:\\Users\\Haamid\\AndroidStudioProjects\\ViewBindingPractice\\app\\build\\intermediates\\res\\merged\\debug\\drawable-anydpi-v24_ic_background_bottom_reg.xml.flat",
         "source": "C:\\Users\\Haamid\\AndroidStudioProjects\\ViewBindingPractice\\app\\build\\generated\\res\\pngs\\debug\\drawable-anydpi-v24\\ic_background_bottom_reg.xml"
     },
     {
-        "merged": "C:\\Users\\Haamid\\AndroidStudioProjects\\ViewBindingPractice\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi_ic_launcher_background.png.flat",
-        "source": "C:\\Users\\Haamid\\AndroidStudioProjects\\ViewBindingPractice\\app\\build\\generated\\res\\pngs\\debug\\drawable-xxxhdpi\\ic_launcher_background.png"
+        "merged": "C:\\Users\\Haamid\\AndroidStudioProjects\\ViewBindingPractice\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-hdpi_ic_launcher.png.flat",
+        "source": "C:\\Users\\Haamid\\AndroidStudioProjects\\ViewBindingPractice\\app\\src\\main\\res\\mipmap-hdpi\\ic_launcher.png"
     },
     {
         "merged": "C:\\Users\\Haamid\\AndroidStudioProjects\\ViewBindingPractice\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi_ic_circled_arrow_icon.png.flat",
@@ -164,12 +164,16 @@
         "source": "C:\\Users\\Haamid\\AndroidStudioProjects\\ViewBindingPractice\\app\\src\\main\\res\\layout\\activity_otp.xml"
     },
     {
-        "merged": "C:\\Users\\Haamid\\AndroidStudioProjects\\ViewBindingPractice\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi_ic_edit.png.flat",
-        "source": "C:\\Users\\Haamid\\AndroidStudioProjects\\ViewBindingPractice\\app\\build\\generated\\res\\pngs\\debug\\drawable-xxhdpi\\ic_edit.png"
+        "merged": "C:\\Users\\Haamid\\AndroidStudioProjects\\ViewBindingPractice\\app\\build\\intermediates\\res\\merged\\debug\\layout_bottomsheet_view.xml.flat",
+        "source": "C:\\Users\\Haamid\\AndroidStudioProjects\\ViewBindingPractice\\app\\src\\main\\res\\layout\\bottomsheet_view.xml"
     },
     {
         "merged": "C:\\Users\\Haamid\\AndroidStudioProjects\\ViewBindingPractice\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_fewa_pick.xml.flat",
         "source": "C:\\Users\\Haamid\\AndroidStudioProjects\\ViewBindingPractice\\app\\src\\main\\res\\layout\\activity_fewa_pick.xml"
+    },
+    {
+        "merged": "C:\\Users\\Haamid\\AndroidStudioProjects\\ViewBindingPractice\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi_ic_edit.png.flat",
+        "source": "C:\\Users\\Haamid\\AndroidStudioProjects\\ViewBindingPractice\\app\\build\\generated\\res\\pngs\\debug\\drawable-xxhdpi\\ic_edit.png"
     },
     {
         "merged": "C:\\Users\\Haamid\\AndroidStudioProjects\\ViewBindingPractice\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-anydpi-v26_ic_launcher_round.xml.flat",
@@ -220,12 +224,12 @@
         "source": "C:\\Users\\Haamid\\AndroidStudioProjects\\ViewBindingPractice\\app\\src\\main\\res\\drawable\\fewaa_logo.png"
     },
     {
-        "merged": "C:\\Users\\Haamid\\AndroidStudioProjects\\ViewBindingPractice\\app\\build\\intermediates\\res\\merged\\debug\\drawable-anydpi-v24_ic_done_tick_symbol.xml.flat",
-        "source": "C:\\Users\\Haamid\\AndroidStudioProjects\\ViewBindingPractice\\app\\build\\generated\\res\\pngs\\debug\\drawable-anydpi-v24\\ic_done_tick_symbol.xml"
-    },
-    {
         "merged": "C:\\Users\\Haamid\\AndroidStudioProjects\\ViewBindingPractice\\app\\build\\intermediates\\res\\merged\\debug\\drawable_rectangle.xml.flat",
         "source": "C:\\Users\\Haamid\\AndroidStudioProjects\\ViewBindingPractice\\app\\src\\main\\res\\drawable\\rectangle.xml"
+    },
+    {
+        "merged": "C:\\Users\\Haamid\\AndroidStudioProjects\\ViewBindingPractice\\app\\build\\intermediates\\res\\merged\\debug\\drawable-anydpi-v24_ic_done_tick_symbol.xml.flat",
+        "source": "C:\\Users\\Haamid\\AndroidStudioProjects\\ViewBindingPractice\\app\\build\\generated\\res\\pngs\\debug\\drawable-anydpi-v24\\ic_done_tick_symbol.xml"
     },
     {
         "merged": "C:\\Users\\Haamid\\AndroidStudioProjects\\ViewBindingPractice\\app\\build\\intermediates\\res\\merged\\debug\\drawable-ldpi_ic_launcher_foreground.png.flat",
@@ -320,20 +324,16 @@
         "source": "C:\\Users\\Haamid\\AndroidStudioProjects\\ViewBindingPractice\\app\\src\\main\\res\\drawable\\transparent_mawafiq_logo.png"
     },
     {
-        "merged": "C:\\Users\\Haamid\\AndroidStudioProjects\\ViewBindingPractice\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi_ic_circled_arrow_icon.png.flat",
-        "source": "C:\\Users\\Haamid\\AndroidStudioProjects\\ViewBindingPractice\\app\\build\\generated\\res\\pngs\\debug\\drawable-mdpi\\ic_circled_arrow_icon.png"
-    },
-    {
         "merged": "C:\\Users\\Haamid\\AndroidStudioProjects\\ViewBindingPractice\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi_ic_otp_25_px.png.flat",
         "source": "C:\\Users\\Haamid\\AndroidStudioProjects\\ViewBindingPractice\\app\\build\\generated\\res\\pngs\\debug\\drawable-xxxhdpi\\ic_otp_25_px.png"
     },
     {
-        "merged": "C:\\Users\\Haamid\\AndroidStudioProjects\\ViewBindingPractice\\app\\build\\intermediates\\res\\merged\\debug\\drawable-anydpi-v24_ic_launcher_foreground.xml.flat",
-        "source": "C:\\Users\\Haamid\\AndroidStudioProjects\\ViewBindingPractice\\app\\build\\generated\\res\\pngs\\debug\\drawable-anydpi-v24\\ic_launcher_foreground.xml"
+        "merged": "C:\\Users\\Haamid\\AndroidStudioProjects\\ViewBindingPractice\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi_ic_circled_arrow_icon.png.flat",
+        "source": "C:\\Users\\Haamid\\AndroidStudioProjects\\ViewBindingPractice\\app\\build\\generated\\res\\pngs\\debug\\drawable-mdpi\\ic_circled_arrow_icon.png"
     },
     {
-        "merged": "C:\\Users\\Haamid\\AndroidStudioProjects\\ViewBindingPractice\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi_ic_thums_up.png.flat",
-        "source": "C:\\Users\\Haamid\\AndroidStudioProjects\\ViewBindingPractice\\app\\build\\generated\\res\\pngs\\debug\\drawable-mdpi\\ic_thums_up.png"
+        "merged": "C:\\Users\\Haamid\\AndroidStudioProjects\\ViewBindingPractice\\app\\build\\intermediates\\res\\merged\\debug\\drawable-anydpi-v24_ic_launcher_foreground.xml.flat",
+        "source": "C:\\Users\\Haamid\\AndroidStudioProjects\\ViewBindingPractice\\app\\build\\generated\\res\\pngs\\debug\\drawable-anydpi-v24\\ic_launcher_foreground.xml"
     },
     {
         "merged": "C:\\Users\\Haamid\\AndroidStudioProjects\\ViewBindingPractice\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi_ic_edit.png.flat",
@@ -344,12 +344,20 @@
         "source": "C:\\Users\\Haamid\\AndroidStudioProjects\\ViewBindingPractice\\app\\build\\generated\\res\\pngs\\debug\\drawable-anydpi-v24\\ic_otp_25_px.xml"
     },
     {
+        "merged": "C:\\Users\\Haamid\\AndroidStudioProjects\\ViewBindingPractice\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi_ic_thums_up.png.flat",
+        "source": "C:\\Users\\Haamid\\AndroidStudioProjects\\ViewBindingPractice\\app\\build\\generated\\res\\pngs\\debug\\drawable-mdpi\\ic_thums_up.png"
+    },
+    {
         "merged": "C:\\Users\\Haamid\\AndroidStudioProjects\\ViewBindingPractice\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi_ic_launcher_foreground.png.flat",
         "source": "C:\\Users\\Haamid\\AndroidStudioProjects\\ViewBindingPractice\\app\\build\\generated\\res\\pngs\\debug\\drawable-mdpi\\ic_launcher_foreground.png"
     },
     {
         "merged": "C:\\Users\\Haamid\\AndroidStudioProjects\\ViewBindingPractice\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi_ic_otp_25_px.png.flat",
         "source": "C:\\Users\\Haamid\\AndroidStudioProjects\\ViewBindingPractice\\app\\build\\generated\\res\\pngs\\debug\\drawable-mdpi\\ic_otp_25_px.png"
+    },
+    {
+        "merged": "C:\\Users\\Haamid\\AndroidStudioProjects\\ViewBindingPractice\\app\\build\\intermediates\\res\\merged\\debug\\layout_bottom_sheet.xml.flat",
+        "source": "C:\\Users\\Haamid\\AndroidStudioProjects\\ViewBindingPractice\\app\\src\\main\\res\\layout\\bottom_sheet.xml"
     },
     {
         "merged": "C:\\Users\\Haamid\\AndroidStudioProjects\\ViewBindingPractice\\app\\build\\intermediates\\res\\merged\\debug\\drawable-anydpi-v21_ic_launcher_background.xml.flat",

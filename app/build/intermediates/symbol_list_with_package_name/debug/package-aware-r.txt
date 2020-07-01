@@ -1579,6 +1579,10 @@ id async
 id auto
 id barrier
 id beginning
+id beneficiary_account
+id beneficiary_name
+id benificiary_recyclerview_id
+id benificiary_recyclerview_layout
 id bidirectional
 id blocking
 id bottom
@@ -1804,6 +1808,7 @@ id test_checkbox_android_button_tint
 id test_checkbox_app_button_tint
 id test_radiobutton_android_button_tint
 id test_radiobutton_app_button_tint
+id testing
 id text
 id text2
 id textEnd
@@ -1907,6 +1912,8 @@ layout abc_tooltip
 layout activity_fewa_pick
 layout activity_main
 layout activity_otp
+layout bottom_sheet
+layout bottomsheet_view
 layout custom_dialog
 layout design_bottom_navigation_item
 layout design_bottom_sheet_dialog

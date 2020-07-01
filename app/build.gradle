@@ -11,7 +11,10 @@ allprojects {
 android {
     compileSdkVersion 29
     buildToolsVersion "29.0.3"
-
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
     defaultConfig {
         applicationId "com.example.viewbindingpractice"
         minSdkVersion 16
@@ -77,13 +80,6 @@ dependencies {
     implementation 'com.android.support:support-annotations:28.0.0'
 
 
-    // JSON Converter
-    implementation 'com.squareup.retrofit2:converter-gson:2.6.0'
-    implementation 'com.squareup.okhttp3:logging-interceptor:3.8.0'
-    implementation 'com.google.android.material:material:1.1.0'
-
-    //glide
-    implementation 'com.github.bumptech.glide:glide:4.9.0'
 
 
 
