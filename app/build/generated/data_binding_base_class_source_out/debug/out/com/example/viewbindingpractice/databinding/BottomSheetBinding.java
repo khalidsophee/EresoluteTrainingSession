@@ -20,20 +20,20 @@ public final class BottomSheetBinding implements ViewBinding {
   private final ConstraintLayout rootView;
 
   @NonNull
-  public final RecyclerView benificiaryRecyclerviewId;
+  public final ConstraintLayout benificiaryRecyclerviewLayout;
 
   @NonNull
-  public final ConstraintLayout benificiaryRecyclerviewLayout;
+  public final RecyclerView recyclerviewid;
 
   @NonNull
   public final TextView testing;
 
   private BottomSheetBinding(@NonNull ConstraintLayout rootView,
-      @NonNull RecyclerView benificiaryRecyclerviewId,
-      @NonNull ConstraintLayout benificiaryRecyclerviewLayout, @NonNull TextView testing) {
+      @NonNull ConstraintLayout benificiaryRecyclerviewLayout, @NonNull RecyclerView recyclerviewid,
+      @NonNull TextView testing) {
     this.rootView = rootView;
-    this.benificiaryRecyclerviewId = benificiaryRecyclerviewId;
     this.benificiaryRecyclerviewLayout = benificiaryRecyclerviewLayout;
+    this.recyclerviewid = recyclerviewid;
     this.testing = testing;
   }
 
@@ -64,13 +64,13 @@ public final class BottomSheetBinding implements ViewBinding {
     // This is done to optimize the compiled bytecode for size and performance.
     int id;
     missingId: {
-      id = R.id.benificiary_recyclerview_id;
-      RecyclerView benificiaryRecyclerviewId = rootView.findViewById(id);
-      if (benificiaryRecyclerviewId == null) {
+      ConstraintLayout benificiaryRecyclerviewLayout = (ConstraintLayout) rootView;
+
+      id = R.id.recyclerviewid;
+      RecyclerView recyclerviewid = rootView.findViewById(id);
+      if (recyclerviewid == null) {
         break missingId;
       }
-
-      ConstraintLayout benificiaryRecyclerviewLayout = (ConstraintLayout) rootView;
 
       id = R.id.testing;
       TextView testing = rootView.findViewById(id);
@@ -78,8 +78,8 @@ public final class BottomSheetBinding implements ViewBinding {
         break missingId;
       }
 
-      return new BottomSheetBinding((ConstraintLayout) rootView, benificiaryRecyclerviewId,
-          benificiaryRecyclerviewLayout, testing);
+      return new BottomSheetBinding((ConstraintLayout) rootView, benificiaryRecyclerviewLayout,
+          recyclerviewid, testing);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

@@ -6,6 +6,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.EditText;
 import android.widget.ImageView;
+import android.widget.LinearLayout;
 import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
@@ -24,7 +25,13 @@ public final class ActivityFewaPickBinding implements ViewBinding {
   public final EditText Name;
 
   @NonNull
+  public final LinearLayout TransactionDetailsFewaPick;
+
+  @NonNull
   public final ImageView circleArrowIcon;
+
+  @NonNull
+  public final ImageView editAmount;
 
   @NonNull
   public final TextView fewaAddfromBeneficiary;
@@ -38,17 +45,24 @@ public final class ActivityFewaPickBinding implements ViewBinding {
   @NonNull
   public final ImageView fewaPickMawakif;
 
+  @NonNull
+  public final EditText payment;
+
   private ActivityFewaPickBinding(@NonNull ConstraintLayout rootView, @NonNull EditText Name,
-      @NonNull ImageView circleArrowIcon, @NonNull TextView fewaAddfromBeneficiary,
+      @NonNull LinearLayout TransactionDetailsFewaPick, @NonNull ImageView circleArrowIcon,
+      @NonNull ImageView editAmount, @NonNull TextView fewaAddfromBeneficiary,
       @NonNull EditText fewaPickAccount, @NonNull TextView fewaPickHeading,
-      @NonNull ImageView fewaPickMawakif) {
+      @NonNull ImageView fewaPickMawakif, @NonNull EditText payment) {
     this.rootView = rootView;
     this.Name = Name;
+    this.TransactionDetailsFewaPick = TransactionDetailsFewaPick;
     this.circleArrowIcon = circleArrowIcon;
+    this.editAmount = editAmount;
     this.fewaAddfromBeneficiary = fewaAddfromBeneficiary;
     this.fewaPickAccount = fewaPickAccount;
     this.fewaPickHeading = fewaPickHeading;
     this.fewaPickMawakif = fewaPickMawakif;
+    this.payment = payment;
   }
 
   @Override
@@ -84,9 +98,21 @@ public final class ActivityFewaPickBinding implements ViewBinding {
         break missingId;
       }
 
+      id = R.id.Transaction_details_fewa_pick;
+      LinearLayout TransactionDetailsFewaPick = rootView.findViewById(id);
+      if (TransactionDetailsFewaPick == null) {
+        break missingId;
+      }
+
       id = R.id.circle_arrow_icon;
       ImageView circleArrowIcon = rootView.findViewById(id);
       if (circleArrowIcon == null) {
+        break missingId;
+      }
+
+      id = R.id.edit_amount;
+      ImageView editAmount = rootView.findViewById(id);
+      if (editAmount == null) {
         break missingId;
       }
 
@@ -114,8 +140,15 @@ public final class ActivityFewaPickBinding implements ViewBinding {
         break missingId;
       }
 
-      return new ActivityFewaPickBinding((ConstraintLayout) rootView, Name, circleArrowIcon,
-          fewaAddfromBeneficiary, fewaPickAccount, fewaPickHeading, fewaPickMawakif);
+      id = R.id.payment;
+      EditText payment = rootView.findViewById(id);
+      if (payment == null) {
+        break missingId;
+      }
+
+      return new ActivityFewaPickBinding((ConstraintLayout) rootView, Name,
+          TransactionDetailsFewaPick, circleArrowIcon, editAmount, fewaAddfromBeneficiary,
+          fewaPickAccount, fewaPickHeading, fewaPickMawakif, payment);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));
