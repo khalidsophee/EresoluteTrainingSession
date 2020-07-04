@@ -9,6 +9,7 @@ import android.widget.ImageView
 import android.widget.LinearLayout
 import android.widget.TextView
 import androidx.cardview.widget.CardView
+import androidx.constraintlayout.widget.ConstraintLayout
 import androidx.recyclerview.widget.RecyclerView
 import com.example.mvvmpractice.Util.OnItemClickListener
 import com.example.mvvmpractice.Util.OnMenuClickListener
@@ -44,7 +45,7 @@ private lateinit var view: View
     class ViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
         val beneficiaryname: TextView = itemView.findViewById(R.id.beneficiary_name) as TextView
         val beneficiaryaccount: TextView = itemView.findViewById(R.id.beneficiary_account) as TextView
-        val linearlayout = itemView.findViewById<LinearLayout>(R.id.list_linearlayout)
+        val linearlayout = itemView.findViewById<ConstraintLayout>(R.id.listview_layout)
         val menu = itemView.findViewById<ImageView>(R.id.list_menu)
 
         fun bind(beneficiaryModel: BeneficiaryModel, listener: View.OnClickListener,menulistener: View.OnClickListener) {

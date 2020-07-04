@@ -17,6 +17,7 @@
         android:layout_height="300dp"
         style="@style/AppBottomSheetDialogTheme"
         android:layout_marginTop="10dp"
+        android:paddingLeft="10dp"
         android:background="@drawable/bottom_sheet_dialog"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toTopOf="parent">

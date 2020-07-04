@@ -4,11 +4,11 @@
     <string name="Transportation_Describe">Please select service provider to initiate the transportation payment</string>
     <string name="Account">Enter account number</string>
     <string name="Name">Short Name of Beneficiary </string>
-    <string name="AddName">Add to Befeficiary List </string>
-    <string name="firstName">or Add from <b>Befeficiary List</b> </string>
+    <string name="AddName">Add to Beneficiary List </string>
+    <string name="firstName">or Add from <b>Beneficiary List</b> </string>
     <string name="success">Success!</string>
     <string name="otp">Enter the 6 digit Otp we just send you</string>
-    <string name="sucess_discription">Your utility bill for FEWA account number 23658976 is being paid successfully</string>
-    <string name="submit_discription">Your beneficiary with FEWA account number 2365898672 has been added to your beneficiary list</string>
+    <string name="sucess_discription">Your utility bill for FEWA account number <b>3658976</b> is being paid successfully</string>
+    <string name="submit_discription">Your beneficiary with FEWA account number <b>2365898672</b> has been added to your beneficiary list</string>
 
 </resources>

@@ -1,14 +1,16 @@
 package com.example.viewbindingpractice.View
 
-import android.app.Dialog
-import android.content.DialogInterface
 import android.content.Intent
+import android.graphics.Color
 import android.os.Bundle
-import android.view.Gravity
+import android.text.Editable
+import android.text.Spannable
+import android.text.SpannableStringBuilder
+import android.text.TextWatcher
+import android.text.style.ForegroundColorSpan
 import android.view.LayoutInflater
 import android.view.View
 import android.widget.Button
-import android.widget.ImageView
 import android.widget.PopupMenu
 import android.widget.Toast
 import androidx.appcompat.app.AlertDialog
@@ -20,16 +22,18 @@ import androidx.recyclerview.widget.RecyclerView
 import com.example.mvvmpractice.Util.OnItemClickListener
 import com.example.mvvmpractice.Util.OnMenuClickListener
 import com.example.viewbindingpractice.Model.BeneficiaryModel
+import com.example.viewbindingpractice.Model.LogoModel
 import com.example.viewbindingpractice.R
+import com.example.viewbindingpractice.Util.OnLogoClickListener
 import com.example.viewbindingpractice.ViewModel.BeneficiaryAdapter
 import com.example.viewbindingpractice.ViewModel.BeneficiaryViewModel
+import com.example.viewbindingpractice.ViewModel.LogoAdapter
 import com.example.viewbindingpractice.databinding.ActivityFewaPickBinding
 import com.google.android.material.bottomsheet.BottomSheetDialog
-import com.google.android.material.dialog.MaterialAlertDialogBuilder
-import kotlinx.android.synthetic.main.bottomsheet_view.*
+import kotlinx.android.synthetic.main.submit_dialog.*
 
 
-class FewaPickActivity : AppCompatActivity() ,OnItemClickListener,OnMenuClickListener{
+class FewaPickActivity : AppCompatActivity() ,OnItemClickListener,OnMenuClickListener,OnLogoClickListener{
 
     var flag:Int=0
     var choose:Int =0
@@ -37,7 +41,7 @@ class FewaPickActivity : AppCompatActivity() ,OnItemClickListener,OnMenuClickLis
     private lateinit var model: BeneficiaryViewModel
     private lateinit var list:List<BeneficiaryModel>
     private lateinit var d:BottomSheetDialog
-
+    var logolist:ArrayList<LogoModel> = ArrayList()
 
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -52,15 +56,22 @@ class FewaPickActivity : AppCompatActivity() ,OnItemClickListener,OnMenuClickLis
                       })
             pickBinding.circleArrowIcon.isEnabled=false
 
-        pickBinding.fewaPickMawakif.setOnClickListener {
-            pickBinding.fewaPickAccount.visibility=View.VISIBLE
-            pickBinding.fewaAddfromBeneficiary.visibility=View.VISIBLE
 
-        }
+             logolist.add(LogoModel(R.drawable.fewaa_logo,"fewa"))
+         //    logolist.add(LogoModel(R.drawable.logo_salik,"fewa"))
+
+        val logorecyclerview = findViewById<RecyclerView>(R.id.fewa_pick_mawakif)
+        logorecyclerview.layoutManager = LinearLayoutManager(this, LinearLayoutManager.HORIZONTAL, false)
+        val logoadapter = LogoAdapter(this,logolist,this)
+        logorecyclerview.adapter = logoadapter
 
 
 
-    pickBinding.fewaAddfromBeneficiary.setOnClickListener {
+        val s = SpannableStringBuilder(getString(R.string.firstName))
+        s.setSpan( ForegroundColorSpan(Color.BLUE), 12,28, Spannable.SPAN_EXCLUSIVE_EXCLUSIVE);
+        pickBinding.fewaAddfromBeneficiary.text = s
+
+        pickBinding.fewaAddfromBeneficiary.setOnClickListener {
         if(choose==0) {
             d = BottomSheetDialog(this)
             val bottomsheet = layoutInflater.inflate(R.layout.bottom_sheet, null)
@@ -83,36 +94,53 @@ class FewaPickActivity : AppCompatActivity() ,OnItemClickListener,OnMenuClickLis
         if(flag==0) {
             //val a=Integer.parseInt(pickBinding.fewaPickAccount.toString())
             model.addBeneficiary(9999999, pickBinding.Name.toString())
-            val dialog = AlertDialog.Builder(this)
+            val dialog = AlertDialog.Builder(this).create()
             val mDialogView = LayoutInflater.from(this).inflate(R.layout.submit_dialog, null)
             dialog.setView(mDialogView)
-           // dialog.setCancelable(false)
+            dialog.setCancelable(false)
             dialog.show()
-            pickBinding.TransactionDetailsFewaPick.visibility=View.VISIBLE
-         //   val submitdialog = findViewById<Button>(R.id.done_tick)
-           // submitdialog.setOnClickListener {
+           val submitdialog = mDialogView.findViewById<Button>(R.id.done_tick)
+            submitdialog.setOnClickListener {
+                 dialog.dismiss()
 
-            //}
+                pickBinding.TransactionDetailsFewaPick.visibility=View.VISIBLE
+                 pickBinding.fewaPickAccount.isEnabled=false
+                pickBinding.Name.isEnabled=false
+            }
 
         }
+
+
         if(flag==1)
         {
             val intent = Intent(this, OtpActivity::class.java)
             startActivity(intent)
         }
     }
-            pickBinding.fewaPickAccount.setOnClickListener {
-                pickBinding.fewaAddfromBeneficiary.setText("Add to Beneficiary List")
-                choose=1
+
+
+        pickBinding.fewaPickAccount.addTextChangedListener(object : TextWatcher {
+            override fun afterTextChanged(s: Editable?) {
+
+            }
+            override fun beforeTextChanged(s: CharSequence, start: Int, count: Int, after: Int) {
+
             }
 
+            override fun onTextChanged(s: CharSequence, start: Int,before: Int, count: Int) {
+                val s = SpannableStringBuilder("Add to Beneficiary List")
+                s.setSpan( ForegroundColorSpan(Color.BLUE), 7,23, Spannable.SPAN_EXCLUSIVE_EXCLUSIVE);
+                pickBinding.fewaAddfromBeneficiary.text = s
+                choose=1
+                }
+        })
+
         pickBinding.editAmount.setOnClickListener {
-            pickBinding.payment.setText("500")
+            pickBinding.detailsAccounttobepiadAmount.setText("500")
+            pickBinding.circleArrowIcon.isEnabled=true
             flag=1
-
+            pickBinding.editAmount.visibility=View.GONE
         }
-
-
 
               }
 
@@ -132,11 +160,24 @@ class FewaPickActivity : AppCompatActivity() ,OnItemClickListener,OnMenuClickLis
         }
     }
     override fun onMenuClick(index: Int, view: View) {
-        val p = PopupMenu(this, view)
+
+        val mDialogView = LayoutInflater.from(this).inflate(R.layout.bottomsheet_view, null)
+      //  val m=mDialogView.findViewById<ImageView>(R.id.list_menu)
+        val p = PopupMenu(this,view)
         p.menuInflater.inflate(R.menu.mymenu, p.menu)
         p.show()
     }
 
+    override fun onLogoClick(index: Int) {
+        if (index==0)
+        {
+
+                pickBinding.fewaPickAccount.visibility=View.VISIBLE
+                pickBinding.fewaAddfromBeneficiary.visibility=View.VISIBLE
+        }
+
+        Toast.makeText(this,"you have succceed",Toast.LENGTH_LONG).show()
+    }
 
 
 }

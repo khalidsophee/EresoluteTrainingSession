@@ -8,10 +8,6 @@
         "source": "C:\\Users\\Haamid\\AndroidStudioProjects\\ViewBindingPractice\\app\\src\\main\\res\\layout\\activity_otp.xml"
     },
     {
-        "merged": "C:\\Users\\Haamid\\AndroidStudioProjects\\ViewBindingPractice\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\activity_main.xml",
-        "source": "C:\\Users\\Haamid\\AndroidStudioProjects\\ViewBindingPractice\\app\\src\\main\\res\\layout\\activity_main.xml"
-    },
-    {
         "merged": "C:\\Users\\Haamid\\AndroidStudioProjects\\ViewBindingPractice\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\activity_fewa_pick.xml",
         "source": "C:\\Users\\Haamid\\AndroidStudioProjects\\ViewBindingPractice\\app\\src\\main\\res\\layout\\activity_fewa_pick.xml"
     },
@@ -22,6 +18,10 @@
     {
         "merged": "C:\\Users\\Haamid\\AndroidStudioProjects\\ViewBindingPractice\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\bottomsheet_view.xml",
         "source": "C:\\Users\\Haamid\\AndroidStudioProjects\\ViewBindingPractice\\app\\src\\main\\res\\layout\\bottomsheet_view.xml"
+    },
+    {
+        "merged": "C:\\Users\\Haamid\\AndroidStudioProjects\\ViewBindingPractice\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\logo_recyclerview_layout.xml",
+        "source": "C:\\Users\\Haamid\\AndroidStudioProjects\\ViewBindingPractice\\app\\src\\main\\res\\layout\\logo_recyclerview_layout.xml"
     },
     {
         "merged": "C:\\Users\\Haamid\\AndroidStudioProjects\\ViewBindingPractice\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\successdialog.xml",

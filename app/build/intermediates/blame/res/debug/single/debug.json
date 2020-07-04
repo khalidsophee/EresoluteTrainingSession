@@ -296,6 +296,10 @@
         "source": "C:\\Users\\Haamid\\AndroidStudioProjects\\ViewBindingPractice\\app\\src\\main\\res\\mipmap-anydpi-v26\\ic_launcher_round.xml"
     },
     {
+        "merged": "C:\\Users\\Haamid\\AndroidStudioProjects\\ViewBindingPractice\\app\\build\\intermediates\\res\\merged\\debug\\layout_logo_recyclerview_layout.xml.flat",
+        "source": "C:\\Users\\Haamid\\AndroidStudioProjects\\ViewBindingPractice\\app\\src\\main\\res\\layout\\logo_recyclerview_layout.xml"
+    },
+    {
         "merged": "C:\\Users\\Haamid\\AndroidStudioProjects\\ViewBindingPractice\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi_ic_launcher_foreground.png.flat",
         "source": "C:\\Users\\Haamid\\AndroidStudioProjects\\ViewBindingPractice\\app\\build\\generated\\res\\pngs\\debug\\drawable-hdpi\\ic_launcher_foreground.png"
     },

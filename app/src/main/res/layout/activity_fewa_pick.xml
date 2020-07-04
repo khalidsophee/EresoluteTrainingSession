@@ -32,14 +32,11 @@
             app:layout_constraintTop_toTopOf="parent" />
 
 
-        <ImageView
+        <androidx.recyclerview.widget.RecyclerView
             android:id="@+id/fewa_pick_mawakif"
-            android:layout_width="80dp"
+            android:layout_width="wrap_content"
             android:layout_height="80dp"
             android:layout_marginTop="32dp"
-            android:clickable="true"
-            android:focusable="true"
-            android:src="@drawable/fewaa_logo"
             app:layout_constraintLeft_toLeftOf="parent"
             app:layout_constraintTop_toBottomOf="@id/fewa_pick_heading" />
 
@@ -47,10 +44,10 @@
             android:id="@+id/fewa_pick_Account"
             android:layout_width="match_parent"
             android:layout_height="50dp"
-            android:inputType="number"
             android:layout_marginTop="10dp"
             android:fontFamily="@font/robotto_medium"
             android:hint="@string/Account"
+            android:inputType="number"
             android:textColor="@color/blue_dark"
             android:textSize="19sp"
             android:visibility="gone"
@@ -65,8 +62,6 @@
             android:fontFamily="@font/robotto_medium"
             android:gravity="end"
             android:paddingBottom="5dp"
-            android:text="@string/firstName"
-            android:textColor="@color/blue_dark"
             android:textSize="15sp"
             android:visibility="gone"
             app:layout_constraintLeft_toLeftOf="parent"
@@ -76,156 +71,183 @@
             android:id="@+id/Name"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
             android:fontFamily="@font/robotto_medium"
             android:hint="@string/Name"
             android:textColor="@color/blue_dark"
             android:textSize="19sp"
-            android:layout_marginTop="15dp"
             android:visibility="gone"
             app:layout_constraintLeft_toLeftOf="parent"
             app:layout_constraintTop_toBottomOf="@id/fewa_addfrom_beneficiary" />
 
-        <LinearLayout
+        <androidx.constraintlayout.widget.ConstraintLayout
             android:id="@+id/Transaction_details_fewa_pick"
             android:layout_width="320dp"
-            android:layout_height="wrap_content"
-            android:orientation="vertical"
             android:visibility="gone"
+            android:layout_height="wrap_content"
             app:layout_constraintLeft_toLeftOf="parent"
             app:layout_constraintTop_toBottomOf="@id/Name">
 
             <TextView
+                android:id="@+id/details_transaction_details"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="10dp"
+                android:layout_marginTop="20dp"
                 android:fontFamily="@font/raleway_extrabold"
                 android:text="Transaction Details"
-                android:textSize="20sp" />
+                android:textSize="20sp"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
 
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="30dp"
-                android:layout_marginTop="10dp">
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:fontFamily="@font/raleway_regular"
-                    android:text="Account number           "
-                    android:textSize="18sp" />
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:text="23659876"
-                    android:textSize="20sp" />
-            </LinearLayout>
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="30dp"
-                android:layout_marginTop="15dp">
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:fontFamily="@font/raleway_regular"
-                    android:text="Billed Amount            "
-                    android:textSize="20sp" />
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:text="AED 300.00"
-                    android:textSize="20sp" />
-            </LinearLayout>
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="30dp"
-                android:layout_marginTop="15dp">
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:text="Account to be paid      "
-                    android:textColor="@color/blue_dark"
-                    android:textSize="20sp" />
-
-                <EditText
-                    android:id="@+id/payment"
-                    android:layout_width="wrap_content"
-                    android:layout_height="40dp"
-                    android:layout_weight="1"
-                    android:focusableInTouchMode="false"
-                    android:text="AED 300.00"
-                    android:textColor="@color/blue_dark"
-                    android:textSize="15sp" />
-
-                <ImageView
-                    android:id="@+id/edit_amount"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center"
-                    android:layout_weight="1"
-                    android:src="@drawable/ic_edit" />
-            </LinearLayout>
 
             <TextView
-                android:layout_width="match_parent"
+                android:id="@+id/details_account_tag"
+                android:layout_width="150dp"
                 android:layout_height="wrap_content"
+                android:layout_marginVertical="10dp"
+                android:layout_weight="1"
+                android:fontFamily="@font/raleway_regular"
+                android:text="Account number           "
+                android:textSize="14sp"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/details_transaction_details" />
+
+            <TextView
+                android:id="@+id/details_account_number"
+                android:layout_width="91dp"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="12dp"
+                android:layout_marginVertical="10dp"
+                android:layout_weight="1"
+                android:fontFamily="@font/robotto_medium"
+                android:text="23659876"
+                android:textSize="14sp"
+                app:layout_constraintLeft_toRightOf="@id/details_account_tag"
+                app:layout_constraintTop_toBottomOf="@id/details_transaction_details" />
+
+            <TextView
+                android:id="@+id/details_billed_amount_tag"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:layout_marginVertical="15dp"
+                android:layout_weight="1"
+                android:fontFamily="@font/raleway_regular"
+                android:text="Billed Amount"
+                android:textSize="14sp"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/details_account_tag" />
+
+            <TextView
+                android:id="@+id/details_billed_amount"
+                android:layout_width="91dp"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="12dp"
+                android:layout_marginVertical="10dp"
+                android:layout_weight="1"
+                android:fontFamily="@font/robotto_medium"
+                android:text="AED 300.00"
+                android:textSize="14sp"
+                app:layout_constraintLeft_toRightOf="@id/details_billed_amount_tag"
+                app:layout_constraintTop_toBottomOf="@id/details_account_number" />
+
+            <TextView
+                android:id="@+id/details_accounttobepiad_tag"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:layout_marginVertical="12dp"
+                android:layout_weight="1"
+                android:text="Amount to be paid"
+                android:textColor="@color/blue_dark"
+                android:textSize="14sp"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/details_billed_amount" />
+
+            <EditText
+                android:id="@+id/details_accounttobepiad_amount"
+                android:layout_width="91dp"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="10dp"
+                android:layout_marginVertical="3dp"
+                android:layout_weight="1"
+                android:focusableInTouchMode="false"
+                android:text="AED 300.00"
+                android:textColor="@color/blue_dark"
+                android:textSize="15sp"
+                app:layout_constraintLeft_toRightOf="@id/details_accounttobepiad_tag"
+                app:layout_constraintTop_toBottomOf="@id/details_billed_amount" />
+
+            <ImageView
+                android:id="@+id/edit_amount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginHorizontal="12dp"
+                android:layout_marginVertical="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_weight="1"
+                android:src="@drawable/ic_edit"
+                app:layout_constraintLeft_toRightOf="@id/details_accounttobepiad_amount"
+                app:layout_constraintTop_toBottomOf="@id/details_billed_amount" />
+
+            <TextView
+                android:id="@+id/details_card_balance"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginVertical="18dp"
                 android:layout_marginTop="10dp"
                 android:fontFamily="@font/raleway_extrabold"
                 android:text="Card balance"
-                android:textSize="20sp" />
+                android:textSize="20sp"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/details_accounttobepiad_tag" />
 
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="30dp"
-                android:layout_marginTop="15dp">
+            <TextView
+                android:id="@+id/details_Before_payment_tag"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:layout_marginVertical="10dp"
+                android:layout_weight="1"
+                android:text="Before payment         "
+                android:textSize="14sp"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/details_card_balance" />
 
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:text="Before payment         "
-                    android:textSize="20sp" />
+            <TextView
+                android:id="@+id/before_payment_amount"
+                android:layout_width="95dp"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="12dp"
+                android:layout_marginVertical="10dp"
+                android:layout_weight="1"
+                android:fontFamily="@font/robotto_medium"
+                android:text="AED 60,622.75"
+                android:textSize="14sp"
+                app:layout_constraintLeft_toRightOf="@id/details_Before_payment_tag"
+                app:layout_constraintTop_toBottomOf="@+id/details_card_balance" />
 
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:text="AED 60,622.75"
-                    android:textSize="20sp" />
-            </LinearLayout>
+            <TextView
+                android:id="@+id/details_after_payment_tag"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="After payment "
+                android:textSize="14sp"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/details_Before_payment_tag" />
 
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="30dp"
-                android:layout_marginTop="10dp">
+            <TextView
+                android:id="@+id/details_after_payment_amount"
+                android:layout_width="95dp"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="12dp"
+                android:layout_weight="1"
+                android:fontFamily="@font/robotto_medium"
+                android:text="AED 60,622.75"
+                android:textSize="14sp"
+                app:layout_constraintLeft_toRightOf="@id/details_after_payment_tag"
+                app:layout_constraintTop_toBottomOf="@id/before_payment_amount" />
 
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:text="After payment            "
-                    android:textSize="20sp" />
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:text="AED 60,622.75"
-                    android:textSize="20sp" />
-            </LinearLayout>
-
-
-        </LinearLayout>
+        </androidx.constraintlayout.widget.ConstraintLayout>
 
         <ImageView
             android:id="@+id/circle_arrow_icon"

@@ -27,10 +27,10 @@ class BeneficiaryViewModel : ViewModel() {
 
 
 
-        bnflist.add(BeneficiaryModel("Khalid",1234567))
-        bnflist.add(BeneficiaryModel("Imran",1567892))
-        bnflist.add(BeneficiaryModel("Quresh",12389789877))
-        bnflist.add(BeneficiaryModel("Farhan",1674534))
+        bnflist.add(BeneficiaryModel("20th March 2020",1234567))
+        bnflist.add(BeneficiaryModel("12th February 2019",1567892))
+        bnflist.add(BeneficiaryModel("10th March 2018",12389789877))
+        bnflist.add(BeneficiaryModel("18th March 2019",1674534))
         bnflist.add(BeneficiaryModel("samrat",123434567))
         bnflist.add(BeneficiaryModel("Adnan",1234567))
         bnflist.add(BeneficiaryModel("Adnan",1234567))

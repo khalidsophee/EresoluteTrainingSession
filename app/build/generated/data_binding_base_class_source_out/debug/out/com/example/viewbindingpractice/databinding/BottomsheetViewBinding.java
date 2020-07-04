@@ -5,7 +5,6 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
-import android.widget.LinearLayout;
 import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
@@ -31,21 +30,25 @@ public final class BottomsheetViewBinding implements ViewBinding {
   public final TextView beneficiaryName;
 
   @NonNull
-  public final LinearLayout listLinearlayout;
+  public final ImageView fewaCardListLogo;
 
   @NonNull
   public final ImageView listMenu;
 
+  @NonNull
+  public final ConstraintLayout listviewLayout;
+
   private BottomsheetViewBinding(@NonNull ConstraintLayout rootView,
       @NonNull TextView beneficiaryAccount, @NonNull CardView beneficiaryCard,
-      @NonNull TextView beneficiaryName, @NonNull LinearLayout listLinearlayout,
-      @NonNull ImageView listMenu) {
+      @NonNull TextView beneficiaryName, @NonNull ImageView fewaCardListLogo,
+      @NonNull ImageView listMenu, @NonNull ConstraintLayout listviewLayout) {
     this.rootView = rootView;
     this.beneficiaryAccount = beneficiaryAccount;
     this.beneficiaryCard = beneficiaryCard;
     this.beneficiaryName = beneficiaryName;
-    this.listLinearlayout = listLinearlayout;
+    this.fewaCardListLogo = fewaCardListLogo;
     this.listMenu = listMenu;
+    this.listviewLayout = listviewLayout;
   }
 
   @Override
@@ -93,9 +96,9 @@ public final class BottomsheetViewBinding implements ViewBinding {
         break missingId;
       }
 
-      id = R.id.list_linearlayout;
-      LinearLayout listLinearlayout = rootView.findViewById(id);
-      if (listLinearlayout == null) {
+      id = R.id.fewa_card_list_logo;
+      ImageView fewaCardListLogo = rootView.findViewById(id);
+      if (fewaCardListLogo == null) {
         break missingId;
       }
 
@@ -105,8 +108,14 @@ public final class BottomsheetViewBinding implements ViewBinding {
         break missingId;
       }
 
+      id = R.id.listview_layout;
+      ConstraintLayout listviewLayout = rootView.findViewById(id);
+      if (listviewLayout == null) {
+        break missingId;
+      }
+
       return new BottomsheetViewBinding((ConstraintLayout) rootView, beneficiaryAccount,
-          beneficiaryCard, beneficiaryName, listLinearlayout, listMenu);
+          beneficiaryCard, beneficiaryName, fewaCardListLogo, listMenu, listviewLayout);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));
